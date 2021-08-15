@@ -21,7 +21,7 @@ class ContatoForm(forms.Form):
             body=conteudo,
             from_email='contato@seudominio.com.br',
             to=['contato@seudominio.com.br',],
-            headers = {'Reply-to': email}
+            headers={'Reply-To': email}
         )
         mail.send()
 
